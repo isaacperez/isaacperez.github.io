@@ -1,0 +1,15 @@
+---
+layout: single
+permalink: /blog/
+title: Todos mis posts
+tagline: Una lista de Posts
+comments: false
+---
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>

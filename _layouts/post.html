@@ -1,0 +1,112 @@
+---
+layout: default
+---
+
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"><!--<![endif]-->
+
+<body class="post">
+
+<div id="main" role="main">
+
+
+  {% include sidebar.html %}
+
+
+  <article>
+    <div class="page">
+
+      {% if page.link %}
+        <h1><a href="{{ page.link }}">{{ page.title }}</a></h1>
+      {% else %}
+        <h1><a href="{{ site.url }}{{ page.url }}" rel="bookmark" title="{{ page.title }}">{{ page.title }}</a></h1>
+      {% endif %}
+
+    </div><!--/ .headline-wrap -->
+
+    <div class="page" >
+
+      {{ content }}
+      <hr />
+      <footer role="contentinfo">
+        <p style="font-size:60%;" class="byline"><strong>{{ page.title }}</strong> fue publicado el <time>
+          {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d de "}}
+          {% case m %}
+            {% when '1' %}enero
+            {% when '2' %}febrero
+            {% when '3' %}marzo
+            {% when '4' %}abril
+            {% when '5' %}mayo
+            {% when '6' %}junio
+            {% when '7' %}julio
+            {% when '8' %}agosto
+            {% when '9' %}septiembre
+            {% when '10' %}octubre
+            {% when '11' %}noviembre
+            {% when '12' %}diciembre
+          {% endcase %}
+          {{ page.date | date: "del %Y"}}
+        </time>
+        {% if page.modified %}
+        y modificado por última vez el <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">
+          {% assign m = page.date | date: "%-m" %}
+          {{ page.date | date: "%-d de "}}
+          {% case m %}
+            {% when '1' %}enero
+            {% when '2' %}febrero
+            {% when '3' %}marzo
+            {% when '4' %}abril
+            {% when '5' %}mayo
+            {% when '6' %}junio
+            {% when '7' %}julio
+            {% when '8' %}agosto
+            {% when '9' %}septiembre
+            {% when '10' %}octubre
+            {% when '11' %}noviembre
+            {% when '12' %}diciembre
+          {% endcase %}
+          {{ page.date | date: "del %Y"}}
+        </time>
+        {% endif %}
+        por <a href="{{ site.url }}" title="About {{ site.author.name }}">{{ site.author.name }}</a>.</p>
+
+      </footer>
+
+      {% if site.disqus_shortname and page.comments %}
+        <div id="disqus_thread">
+          <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = '{{ site.disqus_shortname }}'; // required: replace example with your forum shortname
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            var disqus_identifier = "{{ page.url }}";
+            (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+              var s = document.createElement('script'); s.async = true;
+              s.type = 'text/javascript';
+              s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+              (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+          </script>
+
+          <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      {% endif %}
+    </div>
+    
+  </article>
+
+</div><!-- /#main -->
+
+
+</body>
+</html>

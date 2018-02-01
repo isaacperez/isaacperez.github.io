@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<body class="page">
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article>
+    <h1>{{ page.title }}</h1>
+    <div class="page">
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/img/cv/business.png" alt="Experiencia de trabajo" width="50" height="50"></p>
+    <font size="4"><ul>
+      <li>Soy <strong>investigador</strong>  en la <a href="http://www.uhu.es/index.php" target="_blank">Universidad de Huelva</a>.</li>
+      <li>Fui <strong><i>Computer Vision Engineer</i></strong> en <a href="http://www.agrobot.com/" target="_blank">Agrobot</a>.</li>
+    </ul></font>
+    <br>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/img/cv/study.png" alt="Estudios" width="50" height="50"></p>
+    <font size="4"><ul>
+      <li>Soy Graduado en <strong>Ingeniería Informática</strong>  por la <a href="http://www.uhu.es/index.php" target="_blank">Universidad de Huelva</a>.</li>
+    </ul></font>
+    <br>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/img/cv/computer.png" alt="Habilidades" width="50" height="50"></p>
+    <font size="4"><ul>
+      <li>Suelo crear sistemas basados en <strong><i>deep learning</i></strong> para abordar problemas de <strong>inteligencia artificial</strong>, principalmente relacionados con la <strong>visión</strong>.</li>
+      <li>Mis principales herramientas son: <strong>Caffe</strong>, <strong>TensorFlow</strong>, <strong>TensorRT</strong>, <strong>OpenCV</strong>, <strong>Python</strong> y <strong>C++</strong>.</li>
+      <li>Todos mis sistemas son desarrollados en <strong>Linux</strong>.</li>
+    </ul></font>
+    <br>
+
+    <p align="center" class=bottom-small><img src="{{ site.url }}/img/cv/talk.png" alt="Idiomas" width="50" height="50"></p>
+    <font size="4"><ul>
+      <li>El <strong>español</strong> es mi lengua materna.</li>
+      <li>Tengo un nivel B1 de <strong>inglés</strong>.</li>
+    </ul></font>
+    <br>
+
+    <p align="center" class=bottom-small><font size="4"><ul>Tambien puedes descargarte mi curríclum completo en el siguiente <a href="{{ site.url }}/cv.pdf" target="_blank">enlace</a>.</font></p>
+
+    {{ content }}
+  </article>
+</div><!-- /#index -->
+
+</body>
+</html>
