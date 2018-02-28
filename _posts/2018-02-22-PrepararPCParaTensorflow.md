@@ -10,11 +10,18 @@ Personalmente, me pasé de Caffe a TensorFlow como una apuesta de futuro. Despu�
 
 TensorFlow es compatible con Linux, Windows y Mac OS X. Mi recomendación es trabajar con Linux, concretamente con Ubuntu 16.04 que es el S.O. con el que haremos la instalación.
 
-Disponemos de varias API's para programar en TensorFlow con diferentes lenguajes. Principalmente suelo trabajar en Python por lo que abordaremos la instalación de TensorFlow para Python. Además, es recomendable, si estamos comenzando, realizar la instalación con algún gestor de paquetes como Pip. Para instalar Pip en Ubuntu solo debemos ejecutar estas instrucciones desde la terminal:
+Disponemos de varias API's para programar en TensorFlow con diferentes lenguajes. Principalmente suelo trabajar en Python por lo que abordaremos la instalación de TensorFlow para Python. Además, es recomendable, si estamos comenzando, realizar la instalación con algún gestor de paquetes como Pip. Para instalar Pip en Ubuntu para Python 2 solo debemos ejecutar estas instrucciones desde la terminal:
 
 ```
 sudo apt-get update && sudo apt-get -y upgrade
 sudo apt-get install python-pip python-dev
+```
+
+Para Python 3:
+
+```
+sudo apt-get update && sudo apt-get -y upgrade
+sudo apt-get install python3-pip python3-dev
 ```
 
 En cuanto al hardware, normalmente necesitaremos una gran capacidad de cómputo. Una buena CPU puede ser hasta insuficiente si vamos a entrenar redes muy complejas. Lo recomendable sería hacernos con alguna tarjeta gráfica de NVIDIA y, a poder ser, una que cuente con mas de 8 GB de memoria, ya que algunas arquitecturas de redes pueden requerir bastante memoria y nos obligan a trabajar con un _batch size_ muy pequeño (lo digo por experiencia). De hecho, la última versión de TensorFlow solo es compatible con tarjetas gráficas de NVIDIA que tengan una capacidad de cómputo de CUDA (_CUDA Compute Capability_) de 3.5 o mayor (ver [https://developer.nvidia.com/cuda-gpus](https://developer.nvidia.com/cuda-gpus)).
@@ -85,13 +92,18 @@ A la salida deberíamos ver:
 
 Lo que indica que disponemos de cuDNN v7.0.5 en nuestro equipo.
 
-Una vez completados todos los pasos anteriores, podremos, por fin, instalar TensorFlow. Para ello, solo necesitamos ejecutar la siguiente instrucción desde la terminal:
+Una vez completados todos los pasos anteriores, podremos, por fin, instalar TensorFlow para Python 2. Para ello, solo necesitamos ejecutar la siguiente instrucción desde la terminal:
 
 ```
 sudo pip install tensorflow-gpu
 ```
+Para Python 3:
 
-Si hemos cruzado bien los dedos, debemos tener TensorFlow instalado en nuestro equipo. Para probar que todo ha salido bien solo debemos de ir a una terminal y ejecutar `python` para luego introducir el siguiente código de prueba:
+```
+sudo pip3 install tensorflow-gpu
+```
+
+Si hemos cruzado bien los dedos, debemos tener TensorFlow instalado en nuestro equipo. Para probar que todo ha salido bien solo debemos de ir a una terminal y ejecutar `python` o `python3` para luego introducir el siguiente código de prueba:
 
 ```python
 import tensorflow as tf
