@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Proyectos realizados durante los estudios universitarios"
-categories: anuncios
+categories: Educación
 comments: true
 ---
 Para mi, siempre fue un misterio cómo funcionaban los ordenadores, era algo que no lograba comprender puesto que nunca habia estudiado nada relacionado con la informática. Tuve que esperar a la univesidad para estudiar su funcionamiento y entender todas las cosas que ocurren en tan poco espacio.
@@ -26,7 +26,7 @@ Fueron muchos los proyectos relacionados con la programación que realicé duran
   - Para la asignatura de aprendizaje automático diseñamos un agente para el juego del Super Mario de la competición [Mario AI](http://www.marioai.org/). El agente fue programado en java y utilizaba el algoritmo q-learning de aprendizaje por refuerzo para jugar al juego.
   - Enlace video: [Aprendizaje por refuerzo con el algoritmo Q-learning para el juego del Super Mario](https://www.youtube.com/watch?v=j1IVecHPL-Q)
   - Enlace código: [Super Mario Q-Learning](https://github.com/isaacperez/universidad/tree/master/SuperMario)
-  
+
 - **Trabajo de Fin de Grado: "Estudio de técnicas de _deep learning_ con aplicación a la idenfificación de fresas en imágenes"**.
   - Como Trabajo de Fin de Grado realicé un sistema capáz de determinar si una fresa estaba madura o no. El sistema toma como entrada una imagen de fresas, realiza una detección de fresas en la imagen mediante recuadros para, a continuación, segmentar de cada una de las fresas detectadas y, por último, determinar si las fresas estan maduras o no. Para su realización se empleó una técnica de _deep learning_ conocida como redes neuronales convolucionales.
   - Enlace: [Memoria TFG](https://github.com/isaacperez/universidad/blob/master/memoriaTFG.pdf)

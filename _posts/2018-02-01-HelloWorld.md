@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello world!"
-categories: anuncios
+categories: Anuncios
 comments: true
 ---
 Soy Isaac Pérez, graduado en ingeniería informática por la Universidad de Huelva.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Instalación de Tensorflow"
-categories: anuncios
+categories: Tutoriales
 comments: true
 ---
 Hoy en día podemos encontrar multitud de _frameworks_ para desarrollar sistemas basados en _deep learning_. Uno de los más populares es TensorFlow, se trata de un _framework_ de _machine learning_ de código abierto. Fue lanzado por Google en 2015 y ha contando con un gran respaldo de la comunidad desde entonces.
