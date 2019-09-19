@@ -15,7 +15,7 @@ Para instalar OpenCV necesitaremos instalar algunas librerías extras:
 ```
 sudo apt-get install build-essential cmake git
 sudo apt-get install pkg-config unzip ffmpeg qtbase5-dev python-dev python3-dev
-sudo apt-get install libopencv-dev libgtk-3-dev libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libjpeg8-dev
+sudo apt-get install libgtk-3-dev libdc1394-22 libdc1394-22-dev libjpeg-dev libpng12-dev libtiff5-dev libjasper-dev libjpeg8-dev
 sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libxine2-dev libgstreamer0.10-dev libgstreamer-plugins-base0.10-dev
 sudo apt-get install libv4l-dev libtbb-dev libfaac-dev libmp3lame-dev libopencore-amrnb-dev libopencore-amrwb-dev libtheora-dev
 sudo apt-get install libvorbis-dev libxvidcore-dev v4l-utils vtk6
