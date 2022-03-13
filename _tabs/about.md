@@ -60,4 +60,4 @@ _Languages_
 
 
 <br>
-If you want to know more about the projects and works I have done visit the [**Projects**](https://isaperbor.github.io/projects/) section. If you have any questions, do not hesitate to contact me by mail at **isaperbor [at] gmail [dot] com**.
+If you want to know more about the projects and works I have done visit the [**Projects**](https://isaacperez.github.io/projects/) section. If you have any questions, do not hesitate to contact me by mail at **isaperbor [at] gmail [dot] com**.
