@@ -34,7 +34,7 @@ This project allows the creation of a solution for ROS using the OpenCV and Visi
 ![endoscopicImages](/commons/endoscopicImages.png){: width="128" height="128" .left}
 **Tool for pathology recognition in capsule endoscopic images using deep learning** (2021) 
 During my time at the University, we carried out a project with the Juan Ramón Jimenez Hospital to create a tool for help the specialist to detect certain pathologies in capsule endoscopic images using a deep learning model.
-
+- **Link:**  [https://doi.org/10.1007/s10489-022-04146-3](https://doi.org/10.1007/s10489-022-04146-3)
 
 ### Automated biodiversity monitoring system based on deep learning and citizen science
 ![zooniverse](/commons/zooniverse.png){: width="128" height="128" .left}
