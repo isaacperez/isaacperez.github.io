@@ -17,10 +17,10 @@ The revolution will be derivable or it will not be.
 ![Professional experience](/commons/briefcase-line.svg){: width="64" height="64"}
 _Professional experience_
 
-  - #### **Deep Learning Engenieer** at **Venari** (July 2022 – Current)
+  - #### **Deep Learning Engineer** at **Venari** (July 2022 – Current)
     - I am currently the developer and designer of all **deep learning systems** used at **Venari** (San Francisco-based startup).
 
-  - #### **GPU Engenieer** at **AUTIS** (November 2021 – July 2022)
+  - #### **GPU Engineer** at **AUTIS** (November 2021 – July 2022)
     - Responsible for **porting and optimising** all **real time image processing and model inference algorithms** to **GPU**. The results of my developments are used around the world by **leading car manufacturers** including **Ford**, **Toyota** or **Tesla** among others.
 
   - #### **Researcher** and **Lecturer** at **University of Huelva** (May 2017 – November 2021)
